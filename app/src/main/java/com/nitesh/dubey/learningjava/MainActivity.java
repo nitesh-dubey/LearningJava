@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText edttxt1;
     private TextView txt1;
+    private TextView txtview;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
         edttxt1 = findViewById(R.id.edttxt1);
         txt1 = findViewById(R.id.txt1);
+        txtview = findViewById(R.id.txtview);
+
+
 
         }
 
         public void btnClick(View Textview){
+        txtview.setText("Here You GO");
 
          int x = Integer.valueOf(edttxt1.getText().toString());
          String s = "";
